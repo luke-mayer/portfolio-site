@@ -1,4 +1,3 @@
-// import { Link as ReactRouterLink } from "react-router-dom";
 import {
   //Button,
   //Stack,
@@ -9,9 +8,9 @@ import {
   Flex,
   VStack,
 } from "@chakra-ui/react";
-import HeaderMain from "./components/HeaderMain";
+import HeaderMain from "../components/HeaderMain";
 
-function App() {
+function About() {
   return (
     <Flex
       h="100vh"
@@ -21,10 +20,10 @@ function App() {
       <HeaderMain />
       <VStack h="100%" align="center" justify="center" spacing={6}>
         <Heading as="h2" size="2xl" align="center">
-          Luke Mayer
+          About
         </Heading>
         <Text fontSize="xl" align="center">
-          Welcome to my portfolio site - Under Construction
+          About Page - Under Construction
         </Text>
         {/*
         <Stack spacing={4} direction="row" align="center" justify="center">
@@ -49,4 +48,4 @@ function App() {
   );
 }
 
-export default App;
+export default About;
