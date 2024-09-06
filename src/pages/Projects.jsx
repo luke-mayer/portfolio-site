@@ -1,50 +1,54 @@
-import {
-  //Button,
-  //Stack,
-  Text,
-  Heading,
-  //Link as ChakraLink,
-  StackDivider,
-  Flex,
-  VStack,
-} from "@chakra-ui/react";
+import { VStack, Grid, GridItem, Heading, Box } from "@chakra-ui/react";
 import HeaderMain from "../components/HeaderMain";
+import AbeCard from "../components/AbeCard";
 
 function Projects() {
   return (
-    <Flex
-      h="100vh"
-      direction="column"
-      divider={<StackDivider borderColor="gray.200" />}
+    <Grid
+      templateAreas={`"header"
+                  "main"
+                  "projects"
+                  "footer"`}
+      gridTemplateRows={"auto auto 1fr 20px"}
+      gridTemplateColumns={"1fr"}
+      overflow="hidden"
+      height="100vh"
+      gap="1"
+      fontWeight="bold"
+      align="center"
+      justify="center"
     >
-      <HeaderMain />
-      <VStack h="100%" align="center" justify="center" spacing={6}>
-        <Heading as="h2" size="2xl" align="center">
-          Projects
-        </Heading>
-        <Text fontSize="xl" align="center">
-          Projects Page - Under Construction
-        </Text>
-        {/*
-          <Stack spacing={4} direction="row" align="center" justify="center">
-            <ChakraLink as={ReactRouterLink} to="/ask">
-              <Button colorScheme="teal" size="lg">
-                Play
-              </Button>
-            </ChakraLink>
-            {/* To be Implemented later
-  
-            <ChakraLink as={ReactRouterLink} to="/answer">
-              <Button colorScheme="teal" size="lg">
-                Answer
-              </Button>
-            </ChakraLink>
-  
-            
-          </Stack>
-          */}
-      </VStack>
-    </Flex>
+      <GridItem pl="2" area={"header"}>
+        <HeaderMain />
+      </GridItem>
+      <GridItem pl="2" area={"main"}>
+        <VStack align="center" justify="center" spacing={6} m="6">
+          <Heading as="h2" size="2xl" align="center">
+            Projects
+          </Heading>
+        </VStack>
+      </GridItem>
+      <GridItem pl="2" area={"projects"} align="center" justify="center">
+        <Box
+          marginTop="3"
+          marginRight={"calc(-1 * (100vw - 100%))"}
+          width={"100vw"}
+          p="2"
+          maxHeight="70vh"
+          align="center"
+          justify="center"
+          spacing={6}
+          overflowY="scroll"
+          overflowX="hidden"
+        >
+          <AbeCard />
+          <AbeCard />
+        </Box>
+      </GridItem>
+      <GridItem pl="2" area={"footer"}>
+        Footer
+      </GridItem>
+    </Grid>
   );
 }
 

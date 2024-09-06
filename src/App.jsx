@@ -1,14 +1,4 @@
-// import { Link as ReactRouterLink } from "react-router-dom";
-import {
-  //Button,
-  //Stack,
-  Text,
-  Heading,
-  //Link as ChakraLink,
-  StackDivider,
-  Flex,
-  VStack,
-} from "@chakra-ui/react";
+import { Text, Heading, VStack, Flex, StackDivider } from "@chakra-ui/react";
 import HeaderMain from "./components/HeaderMain";
 
 function App() {
@@ -21,29 +11,13 @@ function App() {
       <HeaderMain />
       <VStack h="100%" align="center" justify="center" spacing={6}>
         <Heading as="h2" size="2xl" align="center">
-          Luke Mayer
+          Hi, I&apos;m Luke
         </Heading>
-        <Text fontSize="xl" align="center">
-          Welcome to my portfolio site - Under Construction
+        <Text fontSize="xl" align="center" maxWidth="500px">
+          I have a deep passion for solving problems, whether that means
+          tracking down bugs in code, reaching beneficial compromises with
+          peers, or finding more effecient ways to go about my day.
         </Text>
-        {/*
-        <Stack spacing={4} direction="row" align="center" justify="center">
-          <ChakraLink as={ReactRouterLink} to="/ask">
-            <Button colorScheme="teal" size="lg">
-              Play
-            </Button>
-          </ChakraLink>
-          {/* To be Implemented later
-
-          <ChakraLink as={ReactRouterLink} to="/answer">
-            <Button colorScheme="teal" size="lg">
-              Answer
-            </Button>
-          </ChakraLink>
-
-          
-        </Stack>
-        */}
       </VStack>
     </Flex>
   );

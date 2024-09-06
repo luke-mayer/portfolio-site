@@ -16,53 +16,59 @@ import {
 
 function HeaderMain() {
   return (
-    <Flex paddingTop="2px" minWidth="max-content" alignItems="center" gap="2">
-      <ChakraLink as={ReactRouterLink} to="/" paddingLeft="2" paddingRight="2">
-        <Heading size="md">Luke Mayer</Heading>
+    <Flex
+      fontweight="bold"
+      p="2px"
+      minWidth="max-content"
+      alignItems="center"
+      gap="2"
+    >
+      <ChakraLink as={ReactRouterLink} to="/" paddingRight="2">
+        <Heading size="sm">Luke Mayer</Heading>
       </ChakraLink>
-      <Breadcrumb separator="-">
+      <Breadcrumb separator="-" size="sm">
         <BreadcrumbItem>
           <BreadcrumbLink as={ReactRouterLink} to="/">
-            <Heading size="md">Home</Heading>
+            <Heading size="sm">Home</Heading>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
           <BreadcrumbLink as={ReactRouterLink} to="/about">
-            <Heading size="md">About</Heading>
+            <Heading size="sm">About</Heading>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
           <BreadcrumbLink as={ReactRouterLink} to="/projects">
-            <Heading size="md">Projects</Heading>
+            <Heading size="sm">Projects</Heading>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
           <BreadcrumbLink as={ReactRouterLink} to="/contact">
-            <Heading size="md">Contact</Heading>
+            <Heading size="sm">Contact</Heading>
           </BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
       <Spacer />
-      <ButtonGroup paddingRight="1" gap="1">
+      <ButtonGroup paddingRight="1" colorScheme="blue" size="sm">
         <ChakraLink href="https://github.com/luke-mayer" isExternal>
-          <Button p="0" colorScheme="teal">
-            <Icon as={FaGithub} boxSize={7} />
+          <Button p="0">
+            <Icon as={FaGithub} boxSize={6} />
           </Button>
         </ChakraLink>
         <ChakraLink
           href="https://umd.joinhandshake.com/profiles/50652472"
           isExternal
         >
-          <Button p="0" colorScheme="teal">
-            <Icon as={SiHandshake} boxSize={7} />
+          <Button p="0">
+            <Icon as={SiHandshake} boxSize={6} />
           </Button>
         </ChakraLink>
         <ChakraLink
           href="https://www.linkedin.com/in/luke-mayer316/"
           isExternal
         >
-          <Button p="0" colorScheme="teal">
-            <Icon as={FaLinkedinIn} boxSize={7} />
+          <Button p="0">
+            <Icon as={FaLinkedinIn} boxSize={6} />
           </Button>
         </ChakraLink>
       </ButtonGroup>
