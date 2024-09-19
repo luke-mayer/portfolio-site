@@ -21,6 +21,7 @@ function HeaderMain() {
       p="2px"
       minWidth="max-content"
       alignItems="center"
+      fontWeight="bold"
       gap="2"
     >
       <ChakraLink as={ReactRouterLink} to="/" paddingRight="2">

@@ -1,15 +1,13 @@
-import { VStack, Grid, GridItem, Heading, Box } from "@chakra-ui/react";
+import { Grid, GridItem, Box } from "@chakra-ui/react";
 import HeaderMain from "../components/HeaderMain";
-import AbeCard from "../components/AbeCard";
+import ProjectTabs from "../components/ProjectTabs";
 
 function Projects() {
   return (
     <Grid
       templateAreas={`"header"
-                  "main"
-                  "projects"
-                  "footer"`}
-      gridTemplateRows={"auto auto 1fr 20px"}
+                  "projects"`}
+      gridTemplateRows={"auto 1fr"}
       gridTemplateColumns={"1fr"}
       overflow="hidden"
       height="100vh"
@@ -18,35 +16,21 @@ function Projects() {
       align="center"
       justify="center"
     >
-      <GridItem pl="2" area={"header"}>
+      <GridItem area={"header"}>
         <HeaderMain />
       </GridItem>
-      <GridItem pl="2" area={"main"}>
-        <VStack align="center" justify="center" spacing={6} m="6">
-          <Heading as="h2" size="2xl" align="center">
-            Projects
-          </Heading>
-        </VStack>
-      </GridItem>
-      <GridItem pl="2" area={"projects"} align="center" justify="center">
+      <GridItem area={"projects"} align="center" justify="center">
         <Box
-          marginTop="3"
-          marginRight={"calc(-1 * (100vw - 100%))"}
           width={"100vw"}
-          p="2"
-          maxHeight="70vh"
+          maxHeight="90vh"
           align="center"
           justify="center"
           spacing={6}
-          overflowY="scroll"
-          overflowX="hidden"
+          // overflowY="scroll"
+          //overflowX="hidden"
         >
-          <AbeCard />
-          <AbeCard />
+          <ProjectTabs />
         </Box>
-      </GridItem>
-      <GridItem pl="2" area={"footer"}>
-        Footer
       </GridItem>
     </Grid>
   );
