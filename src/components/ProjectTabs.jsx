@@ -1,14 +1,16 @@
 import { Box, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
-import AbeCard from "./AbeCard";
+import MichaelScott from "./MichaelScott";
+import OpenMamaaFAANG from "./OpenMamaaFAANG";
+import Abe20Questions from "./Abe20Questions";
 
 function ProjectTabs() {
   return (
     <Tabs isFitted variant="enclosed">
       <TabList mb="1em">
-        <Tab>OpenMammaFAANG inc.</Tab>
-        <Tab>MichaelScott</Tab>
-        <Tab>Abe20Questions</Tab>
-        <Tab>DuMa</Tab>
+        <Tab>OpenMamaaFAANG Inc.</Tab>
+        <Tab>Michael Scott</Tab>
+        <Tab>Abe 20 Questions Bot</Tab>
+        {/* <Tab>DuMa</Tab> */}
       </TabList>
       <Box
         maxHeight="85vh"
@@ -19,18 +21,13 @@ function ProjectTabs() {
       >
         <TabPanels>
           <TabPanel>
-            <p>one!</p>
+            <OpenMamaaFAANG />
           </TabPanel>
           <TabPanel>
-            <p>two!</p>
-            <AbeCard />
-            <AbeCard />
+            <MichaelScott />
           </TabPanel>
           <TabPanel>
-            <p>three!</p>
-          </TabPanel>
-          <TabPanel>
-            <p>four!</p>
+            <Abe20Questions />
           </TabPanel>
         </TabPanels>
       </Box>

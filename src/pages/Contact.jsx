@@ -3,10 +3,11 @@ import {
   //Stack,
   Text,
   Heading,
-  //Link as ChakraLink,
+  Link,
   StackDivider,
   Flex,
   VStack,
+  Box,
 } from "@chakra-ui/react";
 import HeaderMain from "../components/HeaderMain";
 
@@ -22,9 +23,21 @@ function Contact() {
         <Heading as="h2" size="2xl" align="center">
           Contact
         </Heading>
-        <Text fontSize="xl" align="center">
-          Contact Page - Under Construction
-        </Text>
+        <Box textAlign={"left"}>
+          <Text>
+            Github:{" "}
+            <Link href="https://github.com/luke-mayer" isExternal>
+              https://github.com/luke-mayer
+            </Link>
+          </Text>
+          <Text>
+            LinkedIn:{" "}
+            <Link href="www.linkedin.com/in/luke-mayer316" isExternal>
+              www.linkedin.com/in/luke-mayer316
+            </Link>
+          </Text>
+          <Text>Email: lukemayer316@gmail.com</Text>
+        </Box>
         {/*
             <Stack spacing={4} direction="row" align="center" justify="center">
               <ChakraLink as={ReactRouterLink} to="/ask">

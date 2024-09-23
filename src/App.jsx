@@ -1,4 +1,14 @@
-import { Text, Heading, VStack, Flex, StackDivider } from "@chakra-ui/react";
+import {
+  Text,
+  Heading,
+  VStack,
+  Flex,
+  StackDivider,
+  ButtonGroup,
+  Button,
+  Link,
+} from "@chakra-ui/react";
+import { Link as ReactRouterLink } from "react-router-dom";
 import HeaderMain from "./components/HeaderMain";
 
 function App() {
@@ -14,10 +24,27 @@ function App() {
           Hi, I&apos;m Luke
         </Heading>
         <Text fontSize="xl" align="center" maxWidth="500px">
-          I have a deep passion for solving problems, whether that means
-          tracking down bugs in code, reaching beneficial compromises with
-          peers, or finding more effecient ways to go about my day.
+          I&apos;m a senior computer science major at the University of
+          Maryland, specializing in machine learning and graduating in December,
+          2024.
         </Text>
+        <ButtonGroup
+          p="4"
+          spacing="6"
+          colorScheme="blue"
+          size="lg"
+          variant="outline"
+        >
+          <Link as={ReactRouterLink} to="/about">
+            <Button>About</Button>
+          </Link>
+          <Link as={ReactRouterLink} to="/projects">
+            <Button>Projects</Button>
+          </Link>
+          <Link as={ReactRouterLink} to="/contact">
+            <Button>Contact</Button>
+          </Link>
+        </ButtonGroup>
       </VStack>
     </Flex>
   );
