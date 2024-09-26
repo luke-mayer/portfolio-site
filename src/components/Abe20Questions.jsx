@@ -6,16 +6,19 @@ import {
   Link,
   Text,
   Image,
+  Divider,
 } from "@chakra-ui/react";
 
 export default function Abe20Questions() {
   return (
-    <Box textAlign="center" maxWidth="600px">
-      <Heading as="h1" size="lg" mb={4}>
+    <Box textAlign="center" maxWidth="600px" fontSize="md">
+      <Heading as="h1" size="lg" mb={4} paddingBottom="4" paddingTop="4">
         Abe - The Honest 20 Questions Bot
       </Heading>
 
-      <Box textAlign={"left"}>
+      <Divider />
+
+      <Box textAlign={"left"} paddingTop="4">
         <Text>
           Github:{" "}
           <Link

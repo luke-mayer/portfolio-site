@@ -1,6 +1,5 @@
 import { Link as ReactRouterLink } from "react-router-dom";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { SiHandshake } from "react-icons/si";
 import {
   Button,
   ButtonGroup,
@@ -54,14 +53,6 @@ function HeaderMain() {
         <ChakraLink href="https://github.com/luke-mayer" isExternal>
           <Button p="0">
             <Icon as={FaGithub} boxSize={6} />
-          </Button>
-        </ChakraLink>
-        <ChakraLink
-          href="https://umd.joinhandshake.com/profiles/50652472"
-          isExternal
-        >
-          <Button p="0">
-            <Icon as={SiHandshake} boxSize={6} />
           </Button>
         </ChakraLink>
         <ChakraLink

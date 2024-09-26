@@ -12,7 +12,6 @@ function Projects() {
       overflow="hidden"
       height="100vh"
       gap="1"
-      fontWeight="bold"
       align="center"
       justify="center"
     >

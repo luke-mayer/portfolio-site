@@ -53,7 +53,7 @@ function About() {
               </Heading>
               <Text textAlign={"left"}>
                 <strong>Proficient:</strong> Python, Java <br />
-                <strong>Familiar:</strong> JavaScript, HTML/CSS, Dart <br />
+                <strong>Familiar:</strong> JavaScript, C, HTML/CSS, Dart <br />
                 <strong>Experience with Technologies/Frameworks:</strong> AWS,
                 ReactJS, Keras/PyTorch
               </Text>
@@ -97,7 +97,7 @@ function About() {
               </Heading>
               <Text>
                 <strong>Proficient:</strong> Python, Java <br />
-                <strong>Familiar:</strong> JavaScript, HTML/CSS, Dart <br />
+                <strong>Familiar:</strong> JavaScript, C, HTML/CSS, Dart <br />
                 <strong>Experience with Technologies/Frameworks:</strong> AWS,
                 ReactJS, Keras/PyTorch
               </Text>

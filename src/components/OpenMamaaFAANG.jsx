@@ -1,13 +1,15 @@
-import { Box, Heading, Link, Text } from "@chakra-ui/react";
+import { Box, Divider, Heading, Link, Text } from "@chakra-ui/react";
 
 export default function OpenMamaaFAANG() {
   return (
-    <Box textAlign="center" maxWidth="600px">
-      <Heading as="h1" size="lg" mb={4}>
-        OpenMamaaFAANG Inc.
+    <Box textAlign="center" maxWidth="600px" fontSize="md">
+      <Heading as="h1" size="lg" mb={4} paddingBottom="4" paddingTop="4">
+        OpenMamaaFAANG Inc. - Video Game
       </Heading>
 
-      <Box textAlign={"left"}>
+      <Divider />
+
+      <Box textAlign={"left"} paddingTop="4">
         <Text>
           Github:{" "}
           <Link

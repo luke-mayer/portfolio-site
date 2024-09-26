@@ -5,17 +5,19 @@ import {
   UnorderedList,
   Link,
   Text,
+  Divider,
 } from "@chakra-ui/react";
 
 export default function MichaelScott() {
   return (
-    <Box textAlign="center" maxWidth="600px">
+    <Box textAlign="center" maxWidth="600px" paddingBottom="4" paddingTop="4" fontSize="md">
       <Heading as="h1" size="lg" mb={4}>
-        Michael Scott - The Hardcore Parkour Geometry Dash Reinforcement
-        Learning Model
+        Michael Scott - Deep Reinforcement Learning Model
       </Heading>
 
-      <Box textAlign={"left"}>
+      <Divider />
+
+      <Box textAlign={"left"} paddingTop="4">
         <Text>
           Github:{" "}
           <Link href="https://github.com/luke-mayer/michael-scott" isExternal>
@@ -48,7 +50,7 @@ export default function MichaelScott() {
         </Heading>
         <Text>
           Michael Scott is a reinforcement learning model that is designed to
-          beat the Geometry Dash levels. Currently, Michael Scott can beat
+          play the Geometry Dash video game. Currently, Michael Scott can beat
           non-space ship sections (more on that later) of the Stereo Madness
           Level. Michael Scott is trained using a neural network that implements
           double deep q-learning. &quot;Double&quot; refers to the use of a
@@ -73,16 +75,42 @@ export default function MichaelScott() {
           <Heading as="h4" size="sm" mb={2}>
             Implementation
           </Heading>
-          <Text>
+          <Text mb="2">
             One of the things that sets this reinforcement learning project
             aside from other, similar ones is that it uses a commercial, Steam
             version of Geometry Dash as opposed to a recreation that allows
-            backend access to the current game state and controls. Screenshots
-            of the game serve as the state of the game. Simulated keyboard
-            inputs are used to allow the model to play the game in real-time.
-            The game window is reduced to a size of 220 x 260 and the
+            backend access to the current game state and controls. Instead,
+            screenshots of the game serve as the state and simulated keyboard
+            inputs are used to allow the model to train and play the game in
+            real-time. The game window is reduced to a size of 220 x 260 and the
             screenshots that serve as the state of the game are further cropped
-            to a size of 80 x 150.
+            to a size of 80 x 150. This is done to reduce the size of inputs to
+            the neural network, which in turn reduces the time it takes for one
+            epoch or frame of training. The images are also grayscaled to reduce
+            the size of the input and lower complexity. A desktop system with an
+            Nvidia RTX 3080 is able to achieve around 20 epochs, or frames per
+            second during training.
+          </Text>
+          <Text mb="2">
+            Isolated screenshots of the progress bar are used to determine
+            progress and overall performance. The progress bar is also key in
+            determining the terminal state when the model dies and restarts the
+            level. We can determine when the model dies and restarts by when the
+            progress bar resets to zero. This is extremely important for
+            providing feedback to the model as it gets rewarded for every frame
+            it is alive and punished severely if it dies. It is also minorly
+            punished for every time it jumps. This is to motivate the model to
+            only jump when necessary to avoid death.
+          </Text>
+          <Text>
+            See the original report for the CMSC421 class project
+            <Link href="https://github.com/luke-mayer/michael-scott/tree/MichaelScott6.0/documentation">
+              {" "}
+              *found here*{" "}
+            </Link>
+            for a more detailed breakdown of the project as well as cited
+            sources that go into much more detail on deep learning, q-learning,
+            and other concepts used in this project.
           </Text>
         </Box>
 
