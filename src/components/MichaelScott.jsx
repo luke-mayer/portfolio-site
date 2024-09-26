@@ -10,8 +10,14 @@ import {
 
 export default function MichaelScott() {
   return (
-    <Box textAlign="center" maxWidth="600px" paddingBottom="4" paddingTop="4" fontSize="md">
-      <Heading as="h1" size="lg" mb={4}>
+    <Box
+      textAlign="left"
+      maxWidth="600px"
+      paddingBottom="4"
+      paddingTop="4"
+      fontSize="md"
+    >
+      <Heading as="h1" size="lg" mb={4} textAlign="center">
         Michael Scott - Deep Reinforcement Learning Model
       </Heading>
 
@@ -27,11 +33,11 @@ export default function MichaelScott() {
       </Box>
 
       {/* Forward */}
-      <Box id="forward" mt={8} textAlign="center">
-        <Heading as="h2" size="md" mb={4}>
+      <Box id="forward" mt={8}>
+        <Heading as="h2" size="md" mb={4} textAlign="center">
           Forward
         </Heading>
-        <Text textAlign={"center"}>
+        <Text>
           This project began as a final group project for the UMD computer
           science course CMSC421 (Intro to Artificial Intelligence). It was a
           collaboration between Daniel Guerrero-Martin, Ellison Eitel, Justin
@@ -44,20 +50,20 @@ export default function MichaelScott() {
       </Box>
 
       {/* Overview */}
-      <Box id="overview" mt={8} textAlign="center">
-        <Heading as="h2" size="md" mb={4}>
+      <Box id="overview" mt={8}>
+        <Heading as="h2" size="md" mb={4} textAlign="center">
           Overview
         </Heading>
         <Text>
-          Michael Scott is a reinforcement learning model that is designed to
-          play the Geometry Dash video game. Currently, Michael Scott can beat
-          non-space ship sections (more on that later) of the Stereo Madness
-          Level. Michael Scott is trained using a neural network that implements
-          double deep q-learning. &quot;Double&quot; refers to the use of a
-          second target network that updates weights from the online model at
-          less frequent intervals in order to stabilize training and prevent
-          convergence on suboptimal policies. &quot;Deep&quot; refers to the use
-          of multi-layered deep neural network to update model weights.
+          &#9;Michael Scott is a reinforcement learning model that is designed
+          to play the Geometry Dash video game. Currently, Michael Scott can
+          beat non-space ship sections (more on that later) of the Stereo
+          Madness Level. Michael Scott is trained using a neural network that
+          implements double deep q-learning. &quot;Double&quot; refers to the
+          use of a second target network that updates weights from the online
+          model at less frequent intervals in order to stabilize training and
+          prevent convergence on suboptimal policies. &quot;Deep&quot; refers to
+          the use of multi-layered deep neural network to update model weights.
           &quot;Q-learning&quot; refers to the use of the q-learning method of
           reinforcement learning which is more forward thinking in how it
           calculates rewards for given actions.
@@ -65,14 +71,14 @@ export default function MichaelScott() {
       </Box>
 
       {/* How It Works */}
-      <Box id="how-it-works" mt={8} textAlign="center">
-        <Heading as="h2" size="md" mb={4}>
+      <Box id="how-it-works" mt={8}>
+        <Heading as="h2" size="md" mb={4} textAlign="center">
           How It Works
         </Heading>
 
         {/* Implementation */}
         <Box id="implementation" mt={6}>
-          <Heading as="h4" size="sm" mb={2}>
+          <Heading as="h4" size="sm" mb={2} textAlign="center">
             Implementation
           </Heading>
           <Text mb="2">
@@ -133,21 +139,32 @@ export default function MichaelScott() {
 
         {/* Limitations */}
         <Box id="limitations" mt={6}>
-          <Heading as="h3" size="sm" mb={2}>
+          <Heading as="h3" size="sm" mb={2} textAlign="center">
             Limitations
           </Heading>
           <Text>
             The main obstacle to this model being able to fully beat Geometry
-            Dash levels is that Geometry Dash has &quot;space-ship&quot;
-            sections in its levels. In these sections, the nature of the game
-            changes significantly.
+            Dash levels is that Geometry Dash has space-ship sections in its
+            levels. In these sections, the nature of the game changes
+            significantly. In the normal sections, the player jumps to avoid
+            obstacles. This involves taking the jump action once which triggers
+            an animation lasting several epochs before more input is required.
+            In the space-ship section, the player holds the jump button to fly
+            higher and falls otherwise. The act of holding jump is extremely
+            difficult in the current implementation of inputting actions with
+            the process of holding down jump being interrupted by the processes
+            of the neural network as it trains in real-time. The space-ship
+            sections are also much more dynamic which leads to many more
+            possible states which makes it harder for the model to converge on
+            an optimal policy. Finding solutions to this problem is the next
+            goal of this project.
           </Text>
         </Box>
       </Box>
 
       {/* Acknowledgments */}
-      <Box id="acknowledgments" mt={8} textAlign="center">
-        <Heading as="h2" size="md" mb={4}>
+      <Box id="acknowledgments" mt={8}>
+        <Heading as="h2" size="md" mb={4} textAlign="center">
           Acknowledgments
         </Heading>
         <Text>

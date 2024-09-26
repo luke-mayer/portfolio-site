@@ -11,8 +11,15 @@ import {
 
 export default function Abe20Questions() {
   return (
-    <Box textAlign="center" maxWidth="600px" fontSize="md">
-      <Heading as="h1" size="lg" mb={4} paddingBottom="4" paddingTop="4">
+    <Box textAlign="left" maxWidth="600px" fontSize="md">
+      <Heading
+        as="h1"
+        size="lg"
+        mb={4}
+        paddingBottom="4"
+        paddingTop="4"
+        textAlign="center"
+      >
         Abe - The Honest 20 Questions Bot
       </Heading>
 
@@ -38,7 +45,7 @@ export default function Abe20Questions() {
 
       {/* Overview */}
       <Box id="overview" mt={8}>
-        <Heading as="h2" size="md" mb={4}>
+        <Heading as="h2" size="md" mb={4} textAlign="center">
           Overview
         </Heading>
         <Text>
@@ -53,13 +60,13 @@ export default function Abe20Questions() {
           can provide inconsistent answers. Abe, the Honest 20 Questions Bot, on
           the other hand, selects an object, remembers it, and stays honest
           throughout the game. Think you can deduce Abe&apos;s object? Ask your
-          20 questions at the link below.
+          20 questions at the link above.
         </Text>
       </Box>
 
       {/* How It Works */}
       <Box id="how-it-works" mt={8}>
-        <Heading as="h2" size="md" mb={4}>
+        <Heading as="h2" size="md" mb={4} textAlign="center">
           How It Works
         </Heading>
         <Text>
@@ -75,18 +82,34 @@ export default function Abe20Questions() {
           backend while the model is prompted with the object in real-time.
         </Text>
         <Text mt={4}>
-          Prompt engineering ensures that Abe answers only &quot;yes&quot; or
-          &quot;no&quot; to questions, and corrects users if they deviate from
-          the yes-or-no format. This maintains the fairness and integrity of the
-          game.
+          When the user is ready to guess the object, their input is compared
+          against the object stored in the independent backend memory as an
+          extra layer of protection to ensure that the model does not change the
+          object or tell the user they are correct when they are not in an
+          effort to be agreeable.
+        </Text>
+        <Text mt={4}>
+          Prompt engineering is also utilized to instruct the model to never
+          disclose the object, even if the user explicitly asks it to, and to
+          only answer &quot;yes&quot; or &quot;no&quot; to yes-or-no questions.
+          In the case that the user asks questions that are not in the yes-or-no
+          format, the model is instructed to correct the user and request that
+          they ask only yes-or-no questions. In this instance, the user would
+          forfeit one of their 20 questions.
         </Text>
       </Box>
 
       {/* Tech Stack */}
       <Box id="tech-stack" mt={8}>
-        <Heading as="h2" size="md" mb={4}>
+        <Heading as="h2" size="md" mb={4} textAlign="center">
           Tech Stack
         </Heading>
+
+        <Text>
+          This was developed as a full-stack web application utilizing AWS
+          serverless cloud computing. The used languages, frameworks, libraries,
+          and APIs are outlined below:
+        </Text>
 
         {/* Front-End */}
         <Box id="front-end" mt={6} textAlign={"left"}>
@@ -128,7 +151,7 @@ export default function Abe20Questions() {
 
       {/* Acknowledgments */}
       <Box id="acknowledgments" mt={8}>
-        <Heading as="h2" size="md" mb={4}>
+        <Heading as="h2" size="md" mb={4} textAlign="center">
           Acknowledgments
         </Heading>
         <Text>

@@ -2,7 +2,7 @@ import { Box, Divider, Heading, Link, Text } from "@chakra-ui/react";
 
 export default function OpenMamaaFAANG() {
   return (
-    <Box textAlign="center" maxWidth="600px" fontSize="md">
+    <Box textAlign="left" maxWidth="600px" fontSize="md">
       <Heading as="h1" size="lg" mb={4} paddingBottom="4" paddingTop="4">
         OpenMamaaFAANG Inc. - Video Game
       </Heading>
@@ -23,7 +23,7 @@ export default function OpenMamaaFAANG() {
 
       {/* Onboarding */}
       <Box id="onboarding" mt={8}>
-        <Heading as="h2" size="md" mb={4}>
+        <Heading as="h2" size="md" mb={4} textAlign="center">
           Onboarding
         </Heading>
         <Text>
@@ -54,7 +54,7 @@ export default function OpenMamaaFAANG() {
 
       {/* Game Design */}
       <Box id="game-design" mt={8}>
-        <Heading as="h2" size="md" mb={4}>
+        <Heading as="h2" size="md" mb={4} textAlign="center">
           Game Design
         </Heading>
         <Text>
@@ -69,7 +69,7 @@ export default function OpenMamaaFAANG() {
 
       {/* Exploration, Interactivity, and Consequences */}
       <Box id="exploration-interactivity-consequences" mt={8}>
-        <Heading as="h3" size="sm" mb={4}>
+        <Heading as="h3" size="sm" mb={4} textAlign="center">
           Exploration, Interactivity, and Consequences
         </Heading>
         <Text>
@@ -90,7 +90,7 @@ export default function OpenMamaaFAANG() {
 
       {/* Development Status */}
       <Box id="development-status" mt={8}>
-        <Heading as="h3" size="sm" mb={4}>
+        <Heading as="h3" size="sm" mb={4} textAlign="center">
           Development Status
         </Heading>
         <Text>
