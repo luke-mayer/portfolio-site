@@ -121,7 +121,7 @@ export default function Abe20Questions() {
       {/* Diagram */}
       <Box mt={8}>
         <Image
-          src="src\assets\abe-20-questions-diagram-transparent.drawio.png"
+          src="/images/abe-20-questions-diagram-transparent.drawio.png"
           alt="Abe 20 Questions Bot Diagram"
         />
       </Box>
