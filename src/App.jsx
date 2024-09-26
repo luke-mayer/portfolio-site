@@ -24,7 +24,7 @@ function App() {
         <Image
           borderRadius="full"
           boxSize="250px"
-          src="./assets/profile-pic-square.png"
+          src="/images/profile-pic-square.png"
           alt="Luke-Photo"
         />
         <Heading as="h2" size="2xl" align="center">
