@@ -53,9 +53,10 @@ function About() {
               </Heading>
               <Text textAlign={"left"}>
                 <strong>Proficient:</strong> Python, Java <br />
-                <strong>Familiar:</strong> JavaScript, C, HTML/CSS, Dart <br />
+                <strong>Familiar:</strong> SQL, C, Golang, JavaScript, HTML/CSS{" "}
+                <br />
                 <strong>Experience with Technologies/Frameworks:</strong> AWS,
-                ReactJS, Keras/PyTorch
+                Git, ReactJS, Keras/PyTorch
               </Text>
             </Box>
 
@@ -97,14 +98,53 @@ function About() {
               </Heading>
               <Text>
                 <strong>Proficient:</strong> Python, Java <br />
-                <strong>Familiar:</strong> JavaScript, C, HTML/CSS, Dart <br />
+                <strong>Familiar:</strong> SQL, C, Golang, JavaScript, HTML/CSS{" "}
+                <br />
                 <strong>Experience with Technologies/Frameworks:</strong> AWS,
-                ReactJS, Keras/PyTorch
+                Git, ReactJS, Keras/PyTorch
               </Text>
 
               <Heading as="h3" size="md" mt={6} mb={4}>
                 TECHNICAL EXPERIENCE
               </Heading>
+
+              <Text mt={4}>
+                <strong>Michael Scott (Apr-May 2024)</strong> <br />
+                Deep Reinforcement Learning Model - Python (Keras/PyTorch,
+                Gymnasium)
+              </Text>
+              <UnorderedList pl={4}>
+                <ListItem>
+                  Built a reinforcement learning model to play Geometry Dash,
+                  increasing performance by 300% with random batch training and
+                  double Q-learning.
+                </ListItem>
+                <ListItem>
+                  Automated terminal state detection via pixel-level game
+                  screenshot analysis, achieving 99% accuracy in tracking game
+                  completion.
+                </ListItem>
+              </UnorderedList>
+
+              <Text mt={4}>
+                <strong>DuMa (aiduma.com) (Jun-Jul 2024)</strong> <br />
+                AI Dungeon Master - Python (AWS, OpenAI API)
+              </Text>
+              <UnorderedList pl={4}>
+                <ListItem>
+                  Collaborated to create a website allowing users to participate
+                  in a Dungeons and Dragons campaign guided by an AI dungeon
+                  master.
+                </ListItem>
+                <ListItem>
+                  Built a scalable backend using AWS Lambda, enabling
+                  low-latency communication.
+                </ListItem>
+                <ListItem>
+                  Managed HTTP requests, session data, and conversation history
+                  with AWS DynamoDB.
+                </ListItem>
+              </UnorderedList>
 
               <Text mt={4}>
                 <strong>OpenMamaaFAANG Inc. (Aug 2024-Present)</strong> <br />
@@ -143,44 +183,6 @@ function About() {
                 </ListItem>
                 <ListItem>
                   Developed an intuitive front-end with ReactJS and Chakra UI.
-                </ListItem>
-              </UnorderedList>
-
-              <Text mt={4}>
-                <strong>DuMa (aiduma.com) (Jun-Jul 2024)</strong> <br />
-                AI Dungeon Master - Python (AWS, OpenAI API)
-              </Text>
-              <UnorderedList pl={4}>
-                <ListItem>
-                  Collaborated to create a website allowing users to participate
-                  in a Dungeons and Dragons campaign guided by an AI dungeon
-                  master.
-                </ListItem>
-                <ListItem>
-                  Built a scalable backend using AWS Lambda, enabling
-                  low-latency communication.
-                </ListItem>
-                <ListItem>
-                  Managed HTTP requests, session data, and conversation history
-                  with AWS DynamoDB.
-                </ListItem>
-              </UnorderedList>
-
-              <Text mt={4}>
-                <strong>Michael Scott (Apr-May 2024)</strong> <br />
-                Deep Reinforcement Learning Model - Python (Keras/PyTorch,
-                Gymnasium)
-              </Text>
-              <UnorderedList pl={4}>
-                <ListItem>
-                  Built a reinforcement learning model to play Geometry Dash,
-                  increasing performance by 300% with random batch training and
-                  double Q-learning.
-                </ListItem>
-                <ListItem>
-                  Automated terminal state detection via pixel-level game
-                  screenshot analysis, achieving 99% accuracy in tracking game
-                  completion.
                 </ListItem>
               </UnorderedList>
 

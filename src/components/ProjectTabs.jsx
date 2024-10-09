@@ -7,9 +7,9 @@ function ProjectTabs() {
   return (
     <Tabs isFitted variant="enclosed">
       <TabList mb="1em">
-        <Tab>OpenMamaaFAANG Inc.</Tab>
         <Tab>Michael Scott</Tab>
         <Tab>Abe 20 Questions Bot</Tab>
+        <Tab>OpenMamaaFAANG Inc.</Tab>
         {/* <Tab>DuMa</Tab> */}
       </TabList>
       <Box
@@ -21,13 +21,13 @@ function ProjectTabs() {
       >
         <TabPanels>
           <TabPanel>
-            <OpenMamaaFAANG />
-          </TabPanel>
-          <TabPanel>
             <MichaelScott />
           </TabPanel>
           <TabPanel>
             <Abe20Questions />
+          </TabPanel>
+          <TabPanel>
+            <OpenMamaaFAANG />
           </TabPanel>
         </TabPanels>
       </Box>
