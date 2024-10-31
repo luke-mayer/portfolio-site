@@ -6,6 +6,7 @@ import {
   Text,
   UnorderedList,
   ListItem,
+  Image,
 } from "@chakra-ui/react";
 
 export default function YouTubeCustomFeeds() {
@@ -17,9 +18,9 @@ export default function YouTubeCustomFeeds() {
       paddingBottom="4"
       paddingTop="4"
     >
-      <p align="center">
-        <img alt="" src="../../public/images/YCF.png" />
-      </p>
+      <Box mt={8} align={"center"}>
+        <Image src="/images/YCF.png" alt="YCF Logo" />
+      </Box>
 
       <Heading as="h1" size="lg" mb={4} textAlign="center">
         YouTube Custom Feeds - Chrome Extension
@@ -52,9 +53,9 @@ export default function YouTubeCustomFeeds() {
         </Text>
       </Box>
 
-      <p>
-        <img alt="" src="../../public/images/YCF_SS1.png" />
-      </p>
+      <Box mt={8} align={"center"}>
+        <Image src="/images/YCF_SS1.png" alt="YCF Screenshot" />
+      </Box>
 
       {/* Getting Started */}
       <Box id="getting-started" mt={8}>
