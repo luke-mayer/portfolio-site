@@ -37,6 +37,14 @@ export default function YouTubeCustomFeeds() {
           >
             https://github.com/luke-mayer/youtube-custom-feeds
           </Link>
+          <br />
+          Chrome Store:{" "}
+          <Link
+            href="https://chromewebstore.google.com/detail/youtube-custom-feeds/hihmkocmnjddomhngmmpkdidkmpkneea"
+            isExternal
+          >
+            YouTube Custom Feeds Extension
+          </Link>
         </Text>
       </Box>
 
