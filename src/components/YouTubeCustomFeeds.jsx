@@ -72,12 +72,12 @@ export default function YouTubeCustomFeeds() {
         </Heading>
         <Text>
           Simply head to the link below and install the extension in your chrome
-          browser.
+          browser:{" "}
           <Link
             href="https://chromewebstore.google.com/detail/youtube-custom-feeds/hihmkocmnjddomhngmmpkdidkmpkneea"
             isExternal
           >
-            Chrome Web Store
+            *Chrome Web Store*
           </Link>
         </Text>
       </Box>

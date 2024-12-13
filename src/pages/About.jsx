@@ -11,6 +11,7 @@ import {
   UnorderedList,
   ListItem,
   Link,
+  Image,
 } from "@chakra-ui/react";
 import HeaderMain from "../components/HeaderMain";
 
@@ -29,10 +30,16 @@ function About() {
         spacing={6}
         overflowY="scroll"
         overflowX="hidden"
+        marginBottom="6"
       >
         <Box maxHeight="90vh" align="center" justify="center">
+          <Image
+            borderRadius="full"
+            boxSize="250px"
+            src="/images/profile-pic-square.png"
+            alt="Luke-Photo"
+          />
           <Box textAlign="left" mt={8} maxWidth={"600"}>
-            {/* About Me Section */}
             <Heading as="h2" size="lg" mb={4} textAlign={"center"}>
               About Me
             </Heading>
@@ -46,21 +53,19 @@ function About() {
               master new technologies and continuously improve my craft.
             </Text>
 
-            {/* Technical Skills Section */}
             <Box mt={8}>
               <Heading as="h2" size="lg" mb={4} textAlign={"center"}>
                 Technical Skills
               </Heading>
               <Text textAlign={"left"}>
-                <strong>Proficient:</strong> Python, Java <br />
-                <strong>Familiar:</strong> SQL, C, Golang, JavaScript, HTML/CSS{" "}
+                <strong>Proficient:</strong> Python, Golang <br />
+                <strong>Familiar:</strong> SQL, C, Java, JavaScript, HTML/CSS{" "}
                 <br />
                 <strong>Experience with Technologies/Frameworks:</strong> AWS,
-                Git, ReactJS, Keras/PyTorch
+                Google Cloud Platform, Git, ReactJS, PostgreSQL
               </Text>
             </Box>
 
-            {/* Full Resume */}
             <Box mt={8}>
               <Heading as="h2" size="lg" mb={4} textAlign={"center"}>
                 Full Resume
@@ -97,11 +102,11 @@ function About() {
                 TECHNICAL SKILLS
               </Heading>
               <Text>
-                <strong>Proficient:</strong> Python, Java <br />
-                <strong>Familiar:</strong> SQL, C, Golang, JavaScript, HTML/CSS{" "}
+                <strong>Proficient:</strong> Python, Golang <br />
+                <strong>Familiar:</strong> SQL, C, Java, JavaScript, HTML/CSS{" "}
                 <br />
                 <strong>Experience with Technologies/Frameworks:</strong> AWS,
-                Git, ReactJS, Keras/PyTorch
+                Google Cloud Platform, Git, ReactJS, PostgreSQL
               </Text>
 
               <Heading as="h3" size="md" mt={6} mb={4}>
@@ -109,60 +114,44 @@ function About() {
               </Heading>
 
               <Text mt={4}>
-                <strong>Michael Scott (Apr-May 2024)</strong> <br />
-                Deep Reinforcement Learning Model - Python (Keras/PyTorch,
-                Gymnasium)
+                <strong>YouTube Custom Feeds (Oct 2024-Present)</strong> <br />
+                Chrome Extension - Golang, SQL, JavaScript, HTML/CSS
+                (PostgreSQL, Google Cloud Platform)
               </Text>
               <UnorderedList pl={4}>
                 <ListItem>
-                  Built a reinforcement learning model to play Geometry Dash,
-                  increasing performance by 300% with random batch training and
-                  double Q-learning.
+                  Developed a Chrome extension that enables users to create
+                  personalized YouTube feeds, offering streamlined access to
+                  recent videos from user-curated selections of YouTube
+                  channels.
                 </ListItem>
                 <ListItem>
-                  Automated terminal state detection via pixel-level game
-                  screenshot analysis, achieving 99% accuracy in tracking game
-                  completion.
-                </ListItem>
-              </UnorderedList>
-
-              <Text mt={4}>
-                <strong>DuMa (aiduma.com) (Jun-Jul 2024)</strong> <br />
-                AI Dungeon Master - Python (AWS, OpenAI API)
-              </Text>
-              <UnorderedList pl={4}>
-                <ListItem>
-                  Collaborated to create a website allowing users to participate
-                  in a Dungeons and Dragons campaign guided by an AI dungeon
-                  master.
+                  Engineered a Golang backend to handle concurrent HTTP requests
+                  from the frontend, storing and retrieving user-specific feeds
+                  and channel data from a PostgreSQL database, and optimizing
+                  YouTube API calls to efficiently fetch recent videos from
+                  multiple channels within each feed.
                 </ListItem>
                 <ListItem>
-                  Built a scalable backend using AWS Lambda, enabling
-                  low-latency communication.
+                  Architected a PostgreSQL database schema that utilizes
+                  relational tables to store channels and feeds separately with
+                  a linking table, optimizing data efficiency and minimizing
+                  redundant data storage across multiple users by only storing
+                  one instance of a channel even if it is contained in multiple
+                  feeds.
                 </ListItem>
                 <ListItem>
-                  Managed HTTP requests, session data, and conversation history
-                  with AWS DynamoDB.
-                </ListItem>
-              </UnorderedList>
-
-              <Text mt={4}>
-                <strong>OpenMamaaFAANG Inc. (Aug 2024-Present)</strong> <br />
-                Video Game - Java
-              </Text>
-              <UnorderedList pl={4}>
-                <ListItem>
-                  Developed a satirical, text-based Java game where users
-                  experience life as a junior developer at an AI-powered tech
-                  company.
+                  Deployed the backend on Google Cloud Run and the PostgreSQL
+                  database on Google Cloud SQL, ensuring scalable
+                  infrastructure, seamless performance under load, and reliable
+                  access to user data.
                 </ListItem>
                 <ListItem>
-                  Applied static and instance variables to manage player and
-                  environment states dynamically.
-                </ListItem>
-                <ListItem>
-                  Built GUI minigames based on computer science concepts using
-                  Java Swing to improve user engagement.
+                  Built an intuitive and accessible frontend with JavaScript,
+                  incorporating caching mechanisms to store recent feed video
+                  data locally, reducing backend requests and minimizing calls
+                  to the YouTube API for an optimized user experience and faster
+                  load times.
                 </ListItem>
               </UnorderedList>
 
@@ -183,6 +172,28 @@ function About() {
                 </ListItem>
                 <ListItem>
                   Developed an intuitive front-end with ReactJS and Chakra UI.
+                </ListItem>
+              </UnorderedList>
+
+              <Text mt={4}>
+                <strong>Michael Scott (Apr-May 2024)</strong> <br />
+                Deep Reinforcement Learning Model - Python (Keras/PyTorch,
+                Gymnasium)
+              </Text>
+              <UnorderedList pl={4}>
+                <ListItem>
+                  Collaborated with 4 other students to build a reinforcement
+                  learning model to play Geometry Dash.
+                </ListItem>
+                <ListItem>
+                  Built a reinforcement learning model to play Geometry Dash,
+                  increasing performance by 300% with random batch training and
+                  double Q-learning.
+                </ListItem>
+                <ListItem>
+                  Automated terminal state detection via pixel-level game
+                  screenshot analysis, achieving 99% accuracy in tracking game
+                  completion.
                 </ListItem>
               </UnorderedList>
 
