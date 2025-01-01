@@ -31,10 +31,9 @@ function App() {
           Hi, I&apos;m Luke
         </Heading>
         <Text fontSize="xl" align="center" maxWidth="500px">
-          I&apos;m a senior Computer Science major at the University of
-          Maryland, specializing in Machine Learning and graduating in December,
-          2024. I am currently seeking a full-time, entry level Software
-          Engineer/Developer job.
+          I&apos;m a Computer Science graduate from the University of
+          Maryland (December 2024) and I am currently seeking a full-time, entry level Software
+          Engineer/Developer position.
         </Text>
         <ButtonGroup
           p="4"

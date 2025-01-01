@@ -94,7 +94,7 @@ function About() {
               </Heading>
               <Text>
                 University of Maryland – College Park, MD <br />
-                Expected Graduation Dec 2024 <br />
+                Graduated Dec 2024 <br />
                 Bachelor of Science in Computer Science (Machine Learning Track){" "}
               </Text>
 
