@@ -62,7 +62,7 @@ function About() {
                 <strong>Familiar:</strong> SQL, C, Java, JavaScript, HTML/CSS{" "}
                 <br />
                 <strong>Experience with Technologies/Frameworks:</strong> AWS,
-                Google Cloud Platform, Git, ReactJS, PostgreSQL
+                Google Cloud Platform, Git, ReactJS, PostgreSQL, Linux/Unix
               </Text>
             </Box>
 
